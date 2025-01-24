@@ -30,6 +30,8 @@ export function NavbarComponent() {
     ]
 
     return (
+        <div className="fixed w-full">
+
         <Navbar fluid className="lg:[&>*]:mx-20 py-5 dark:bg-gray-950">
             <Navbar.Brand as={Link} href="https://flowbite-react.com" className="gap-2">
                 <Image src="/logo.png" width={100} height={100} className="object-cover w-10" alt="Flowbite React Logo" />
@@ -44,6 +46,7 @@ export function NavbarComponent() {
                 }
             </Navbar.Collapse>
         </Navbar>
+                </div>
     );
 }
 
