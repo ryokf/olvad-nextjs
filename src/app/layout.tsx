@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from '../components/Navbar';
 
 const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-geist-sans",
+  variable: "--font-plusJakarta",
   subsets: ["latin"],
 });
 
