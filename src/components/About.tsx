@@ -63,20 +63,23 @@ const About = () => {
                             <div className="w-1/3 aspect-video rounded-xl  flex flex-col justify-center items-center">
                                 <h2 className='text-3xl font-bold text-tertiary'>
                                     {isCountUpVisible && <CountUp start={0} end={50} duration={3} enableScrollSpy={true} />}
+                                    {!isCountUpVisible && <span>50</span>}
                                     +
                                 </h2>
                                 <p className='font-medium text-lg text-tertiary'>Produk terbaik</p>
                             </div>
                             <div className="w-1/3 aspect-video rounded-xl  flex flex-col justify-center items-center">
                                 <h2 className='text-3xl font-bold text-tertiary'>
-                                    {isCountUpVisible && <CountUp start={0} end={100} duration={3} enableScrollSpy={true} />}
+                                    {isCountUpVisible &&<CountUp start={0} end={100} duration={3} enableScrollSpy={true} />}
+                                    {!isCountUpVisible && <span>100</span>}
                                     +
                                 </h2>
                                 <p className='font-medium text-lg text-tertiary'>penjualan tiap bulan</p>
                             </div>
                             <div className="w-1/3 aspect-video rounded-xl  flex flex-col justify-center items-center">
                                 <h2 className='text-3xl font-bold text-tertiary'>
-                                    {isCountUpVisible && <CountUp start={0} end={50} duration={3} enableScrollSpy={true} />}
+                                    {isCountUpVisible &&<CountUp start={0} end={50} duration={3} enableScrollSpy={true} />}
+                                    {!isCountUpVisible && <span>50</span>}
                                     +
                                 </h2>
                                 <p className='font-medium text-lg text-tertiary'>Pelanggan</p>
