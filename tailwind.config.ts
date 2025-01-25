@@ -18,6 +18,9 @@ export default {
         },
         secondary: {
           'DEFAULT': '#A9907E',
+        },
+        tertiary: {
+          'DEFAULT': '#ABC4AA',
         }
       },
     },

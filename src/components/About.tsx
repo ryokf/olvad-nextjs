@@ -9,28 +9,34 @@ import { ScrollTrigger } from 'gsap/all';
 
 const About = () => {
     const outlineTextRef = useRef(null);
+    const contentRef = useRef(null);
 
     gsap.registerPlugin(ScrollTrigger);
-
-    
     
     useGSAP(() => {
         const tl = gsap.timeline({
-            scrollTrigger: outlineTextRef.current, // start the timeline animation when ".container" enters the viewport (once)
+            scrollTrigger: contentRef.current, // start the timeline animation when ".container" enters the viewport (once)
         });
 
-        tl.from(outlineTextRef.current, {
+        tl.from(contentRef.current, {
+            scale: 0,
             opacity: 0,
-            x: -100,
             duration: 1,
             ease: "power4.out"
         })
+        tl.from(outlineTextRef.current, {
+            opacity: 0,
+            x: -100,
+            duration: 0.5,
+            ease: "power4.out"
+        })
+
     });
 
     return (
         <div className="h-screen max-w-7xl mx-auto relative flex justify-center items-center">
             <OutlineBigText ref={outlineTextRef} className='-left-1/3 top-6 !text-[10rem]'>OurStoryOurstoryOurStoryOurStory</OutlineBigText>
-            <div className="">
+            <div ref={contentRef}>
                 <h1 className='text-8xl mx-16 my-8 font-bold text-primary'>About Us</h1>
                 <div className="grid grid-cols-2 gap-x-">
                     <div className="flex justify-center">

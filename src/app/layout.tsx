@@ -1,17 +1,11 @@
-import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from '../components/Navbar';
+import { poppins } from "@/theme/font";
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-plusJakarta",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Olvad",
-  description: "Bakery website",
-};
+// export const metadata: Metadata = {
+//   title: "Olvad",
+//   description: "Bakery website",
+// };
 
 export default function RootLayout({
   children,
@@ -21,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="darks">
       <body
-        className={` ${plusJakarta.variable} antialiased overflow-x-hidden`}
+        className={`${poppins.className} antialiased overflow-x-hidden`}
       >
         <Navbar></Navbar>
         {children}
