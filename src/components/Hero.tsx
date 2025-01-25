@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="grid grid-cols-2 items-stretch">
                 <div className="flex flex-col items-start justify-center h-screen">
                     <h1 ref={headTextRef} className={`${poppins.className} text-8xl font-bold text-primary`}>Feel The <span className={`${sourGummy.className} font-bold text-tertiary`}>Happiness</span> In Every Bite</h1>
-                    <p className='my-7 text-secondary text-2xl font-light'>kombinasi dari bahan alami terbaik untuk manisnya setiap momen</p>
+                    <p className='my-7 text-secondary text-2xl font-medium'>kombinasi dari bahan alami terbaik untuk manisnya setiap momen</p>
                     {/* <button className='bg-secondary text-white py-2 px-4 rounded-xl text-xl'>Lihat Menu</button> */}
                     <TextInput sizing={"lg"} theme={textInputTheme} color='primary' id="email4" type="email" icon={IoSearch} placeholder="Cari menu favoritmu" required className='w-11/12 focus:!outline-primary' />
                 </div>

@@ -30,7 +30,7 @@ export function NavbarComponent() {
     ]
 
     return (
-        <div className="fixed w-full">
+        <div className="fixed w-full z-[999]">
 
         <Navbar fluid className="lg:[&>*]:mx-20 py-5 dark:bg-gray-950">
             <Navbar.Brand as={Link} href="https://flowbite-react.com" className="gap-2">
