@@ -46,19 +46,17 @@ const About = () => {
     });
 
     return (
-        <div className="h-screen max-w-7xl mx-auto relative flex justify-center items-center">
+        <div className="h-screen w-11/12 max-w-7xl mx-auto relative flex justify-center items-center ">
             <OutlineBigText ref={outlineTextRef} className='-left-1/3 top-6 !text-[10rem]'>OurStoryOurstoryOurStoryOurStory</OutlineBigText>
             <div ref={contentRef}>
-                <h1 className='text-8xl mx-20 my-8 font-bold text-primary'>About Us</h1>
-                <div className="grid grid-cols-2 gap-x-">
-
+                <h1 className='text-3xl lg:text-8xl mx-20 my-8 font-bold text-primary'>About Us</h1>
+                <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="flex justify-center">
-                        <Image src="/about.jpg" width={1000} height={1000} className="object-cover w-[35rem] aspect-square rounded-xl" alt="Flowbite React Logo"></Image>
+                        <Image src="/about.png" width={1000} height={1000} className="object-cover w-80 lg:w-[35rem] aspect-square rounded-xl" alt="Flowbite React Logo"></Image>
                     </div>
-                    <div className="">
-
-                        <p className=' text-secondary text-xl'>Selamat datang di <span className={`text-tertiary font-bold ${sourGummy.className}`}>Olvad</span>, tempat di mana kelezatan bertemu dengan kualitas. Kami berdedikasi untuk menyajikan roti, kue, dan pastry yang dibuat segar setiap hari menggunakan bahan-bahan pilihan terbaik. Dengan resep yang diracik penuh cinta dan perhatian, kami ingin setiap gigitan dari produk kami memberikan kehangatan dan kebahagiaan bagi Anda dan keluarga.</p>
-                        <p className='my-7 text-secondary text-xl'>Sejak berdiri pada tahun 2023, kami telah menjadi bagian dari banyak momen istimewa pelanggan kami. Mulai dari seminar hingga pesta perayaan, kami berkomitmen untuk menghadirkan cita rasa yang tak terlupakan. Terima kasih telah mempercayakan Olvad sebagai pilihan Anda, dan kami berharap dapat terus menemani hari-hari Anda dengan roti dan kue terbaik.</p>
+                    <div className="max-w-full">
+                        <p className=' text-secondary max-w-6xl text-base lg:text-xl'>Selamat datang di <span className={`text-tertiary font-bold ${sourGummy.className}`}>Olvad</span>, tempat di mana kelezatan bertemu dengan kualitas. Kami berdedikasi untuk menyajikan roti, kue, dan pastry yang dibuat segar setiap hari menggunakan bahan-bahan pilihan terbaik. Dengan resep yang diracik penuh cinta dan perhatian, kami ingin setiap gigitan dari produk kami memberikan kehangatan dan kebahagiaan bagi Anda dan keluarga.</p>
+                        <p className='my-7 text-secondary text-base lg:text-xl hidden lg:block'>Sejak berdiri pada tahun 2023, kami telah menjadi bagian dari banyak momen istimewa pelanggan kami. Mulai dari seminar hingga pesta perayaan, kami berkomitmen untuk menghadirkan cita rasa yang tak terlupakan. Terima kasih telah mempercayakan Olvad sebagai pilihan Anda, dan kami berharap dapat terus menemani hari-hari Anda dengan roti dan kue terbaik.</p>
                         <div className="flex gap-x-4 justify-center w-full">
                             <div className="w-1/3 aspect-video rounded-xl  flex flex-col justify-center items-center">
                                 <h2 className='text-3xl font-bold text-tertiary'>

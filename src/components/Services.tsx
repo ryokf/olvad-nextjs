@@ -16,8 +16,8 @@ const Services = () => {
                 <div className="justify-self-end">
                     <Image src="/service-blob/vector.svg" width={400} height={400} alt=""></Image>
                 </div>
-                <div className="">
-                    <Image src="/service-blob/vector.svg" width={400} height={400} alt=""></Image>
+                <div className="justify-self-start bg-[url('/service-blob/vector.svg')] bg-no-repeat text-tertiary h-full w-full">
+                    {/* <Image src="/service-blob/vector.svg" width={400} height={400} alt="" color='#ffffff' className='text-tertiary'></Image> */}
                 </div>
                 
             </div>

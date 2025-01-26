@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="darks">
       <body
-        className={`${poppins.className} antialiased overflow-x-hidden`}
+        className={`${poppins.className} antialiased !overflow-x-hidden`}
       >
         <Suspense fallback={<div className="flex items-center justify-center h-screen">Loading...</div>}>
           <Navbar></Navbar>
